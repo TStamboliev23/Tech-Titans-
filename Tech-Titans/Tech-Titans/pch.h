@@ -6,3 +6,4 @@ using namespace std;
 #include <Windows.h>
 #include <cstring>
 #include <vector>
+#include <string>

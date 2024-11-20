@@ -5,3 +5,4 @@ void MenuFunctionTextOne();
 void MenuFunctionTextTwo();
 void WordleFiveLettersEasyDiff();
 void WordleGraphInputer();
+string UpperCaseToLowerCase(string word);

@@ -1,5 +1,6 @@
 ﻿#include "../Tech-Titans/functions.h"
 #include "../Tech-Titans/pch.h" 
+using namespace std;
 void WordleFiveLettersEasyDiff() {
     vector<string> AllFiveLetterWords = {
             "ABOUT​",        "OTHER​",        "WHICH​",        "THEIR​",        "THERE​",        "FIRST​",        "WOULD​",        "THESE​",        "CLICK​",        "PRICE​",
@@ -870,5 +871,5 @@ void WordleFiveLettersEasyDiff() {
             "BWAZI",        "BYDED",        "BYDES",        "BYKED",        "BYKES",        "BYRLS",        "BYSSI",        "CAAED",        "CABOB",        "CABO",
 
     };
-    cout << AllFiveLetterWords.at(2);
+   
 }

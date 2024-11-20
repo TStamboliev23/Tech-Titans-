@@ -6,6 +6,15 @@ using namespace std;
 
 int WordLength = 0;//checks for the word length input
 int Difficulty = 0;//checks for the difficulty input
+string UpperCaseToLowerCase(string word)//turnes all the uppercase words to lowercase
+{
+    for (auto& x : word)
+    {
+        x = tolower(x);
+    }
+    return word;
+
+}
 void WordleGraphInputer()
 {
     cout << " --------------------------------------------------------------" << endl;

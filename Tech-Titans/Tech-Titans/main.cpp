@@ -9,4 +9,5 @@ int main()
     MenuFunctionChoice();//first use of the function
     MenuFunctionTextTwo();
     MenuFunctionChoice();//second use of the function
+    
 }

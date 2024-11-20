@@ -2,8 +2,25 @@
 #include "../Tech-Titans/pch.h"
 using namespace std;
 
+
+
 int WordLength = 0;//checks for the word length input
 int Difficulty = 0;//checks for the difficulty input
+void WordleGraphInputer()
+{
+    cout << " --------------------------------------------------------------" << endl;
+    cout << "|                                                             |" << endl;
+    cout << "|  $$\\      $$\\                           $$\\ $$\\             |" << endl;
+    cout << "|  $$ | $\\  $$ |                          $$ |$$ |            |" << endl;
+    cout << "|  $$ |$$$\\ $$ | $$$$$$\\   $$$$$$\\   $$$$$$$ |$$ | $$$$$$\\    |" << endl;
+    cout << "|  $$ $$ $$\\$$ |$$  __$$\\ $$  __$$\\ $$  __$$ |$$ |$$  __$$\\   |" << endl;
+    cout << "|  $$$$  _$$$$ |$$ /  $$ |$$ |  \\__|$$ /  $$ |$$ |$$$$$$$$ |  |" << endl;
+    cout << "|  $$$  / \\$$$ |$$ |  $$ |$$ |      $$ |  $$ |$$ |$$   ____|  |" << endl;
+    cout << "|  $$  /   \\$$ |\\$$$$$$  |$$ |      \\$$$$$$$ |$$ |\\$$$$$$$\\   |" << endl;
+    cout << "|  \\__/     \\__| \\______/ \\__|       \\_______|\\__| \\_______|  |" << endl;
+    cout << "|                                                             |" << endl;
+    cout << "---------------------------------------------------------------" << endl;
+}
 void MenuFunctionChoice()//checks if you typed the right number
 {
     char Choice;
@@ -52,6 +69,7 @@ void MenuFunctionChoice()//checks if you typed the right number
         }
    }
     system("cls");//clears the window text
+    WordleGraphInputer();
 
 
 
@@ -105,6 +123,7 @@ void MenuFunctionChoice()//checks if you typed the right number
 }
 void MenuFunctionTextOne()//inputing the word lenght choice
 {
+    WordleGraphInputer();
     cout << "Five Letter Words(1)\nSix Letter Words(2)\nSeven Letter Words(3)\n";
 }
 void MenuFunctionTextTwo()//inputing the difficulty choice

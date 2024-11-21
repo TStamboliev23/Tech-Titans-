@@ -15,6 +15,28 @@ string UpperCaseToLowerCase(string word)//turnes all the uppercase words to lowe
     return word;
 
 }
+string WordCorrectnessChecker(string word, vector<string> vector)//checks if the word is in the vector
+
+{
+
+    for (auto i = 0; i < vector.size(); i++)//loops until the vector ends
+
+    {
+
+        if (UpperCaseToLowerCase(word) == UpperCaseToLowerCase(vector[i]))
+
+        {
+
+            return vector[i];
+
+        }
+
+    }
+
+    return "";
+
+}
+
 void WordleGraphInputer()
 {
     cout << " --------------------------------------------------------------" << endl;

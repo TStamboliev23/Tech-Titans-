@@ -6,3 +6,4 @@ void MenuFunctionTextTwo();
 void WordleFiveLettersEasyDiff();
 void WordleGraphInputer();
 string UpperCaseToLowerCase(string word);
+string WordCorrectnessChecker(string word, vector<string> vector);

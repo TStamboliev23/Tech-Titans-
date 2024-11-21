@@ -871,6 +871,9 @@ vector<string> AllFiveLetterWords = {
 };
 void WordleFiveLettersEasyDiff() {
     string InputWord;
+    srand(time(0));
+    int RandomNum = rand() % 8691;
+    string RandomWord = AllFiveLetterWords[RandomNum];
     do {
         cin >> InputWord;
         string Word = WordCorrectnessChecker(InputWord, AllFiveLetterWords);

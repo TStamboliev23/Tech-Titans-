@@ -19,6 +19,12 @@ string LowerCaseToUpperCase(string word)//turnes the lowercase string to upperca
     }
     return word;
 }
+char UpperCaseToLowerCaseChar(char word)//turnes the uppercase char to lowercase
+{
+    word = tolower(word);
+
+    return word;
+}
 string WordCorrectnessChecker(string word, vector<string> vector)//checks if the word is in the vector
 
 {

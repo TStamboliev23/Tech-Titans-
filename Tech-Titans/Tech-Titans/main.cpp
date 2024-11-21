@@ -1,7 +1,5 @@
 #include "../Tech-Titans/functions.h"
 #include "../Tech-Titans/pch.h"
-#include <iostream>
-using namespace std;
 
 int main()
 {

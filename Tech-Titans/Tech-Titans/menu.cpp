@@ -1,9 +1,5 @@
-#include <iostream>
+#include "../Tech-Titans/functions.h"
 #include "../Tech-Titans/pch.h"
-using namespace std;
-
-
-
 int WordLength = 0;//checks for the word length input
 int Difficulty = 0;//checks for the difficulty input
 string UpperCaseToLowerCase(string word)//turnes all the uppercase words to lowercase
@@ -110,6 +106,7 @@ void MenuFunctionChoice()//checks if you typed the right number
     case 1:
         if (Difficulty == 1)//checks if the values are 1 and 1
         {
+            WordleFiveLettersEasyDiff();
             break;
         }
         else if (Difficulty == 2)//checks if the values are 1 and 2

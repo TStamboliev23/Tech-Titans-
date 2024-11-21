@@ -1,8 +1,6 @@
 ﻿#include "../Tech-Titans/functions.h"
 #include "../Tech-Titans/pch.h" 
-using namespace std;
-void WordleFiveLettersEasyDiff() {
-    vector<string> AllFiveLetterWords = {
+vector<string> AllFiveLetterWords = {
             "ABOUT​",        "OTHER​",        "WHICH​",        "THEIR​",        "THERE​",        "FIRST​",        "WOULD​",        "THESE​",        "CLICK​",        "PRICE​",
             "STATE​",        "WORLD​",        "MUSIC​",        "AFTER​",        "VIDEO​",        "WHERE​",        "BOOKS​",        "LINKS​",        "YEARS​",        "ORDER​",
             "ORDER",        "ITEMS",        "GROUP",        "UNDER",        "GAMES",        "COULD",        "GREAT",        "HOTEL",        "STORE",        "TERMS",
@@ -870,6 +868,20 @@ void WordleFiveLettersEasyDiff() {
             "BURDS",        "BURFI",        "BURGS",        "BUROO",        "BUSKS",        "BUSKY",        "BUSSU",        "BUSTI",        "BUTLE",        "BUTUT",
             "BWAZI",        "BYDED",        "BYDES",        "BYKED",        "BYKES",        "BYRLS",        "BYSSI",        "CAAED",        "CABOB",        "CABO",
 
-    };
+};
+void WordleFiveLettersEasyDiff() {
+    string InputWord;
+    do {
+        cin >> InputWord;
+        string Word = WordCorrectnessChecker(InputWord, AllFiveLetterWords);
+        if (Word != "") {
+
+            break;
+        }
+        else {
+            cout << "This is not a real word, try again\n";
+        }
+
+    } while (true);
    
 }

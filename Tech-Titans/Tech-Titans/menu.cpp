@@ -11,6 +11,14 @@ string UpperCaseToLowerCase(string word)//turnes all the uppercase words to lowe
     return word;
 
 }
+string LowerCaseToUpperCase(string word)//turnes the lowercase string to uppercase
+{
+    for (auto& x : word)
+    {
+        x = toupper(x);
+    }
+    return word;
+}
 string WordCorrectnessChecker(string word, vector<string> vector)//checks if the word is in the vector
 
 {

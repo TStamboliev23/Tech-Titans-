@@ -886,5 +886,5 @@ void WordleFiveLettersEasyDiff() {
         }
 
     } while (true);
-   
+    string InputWordInCase = LowerCaseToUpperCase(InputWord);
 }

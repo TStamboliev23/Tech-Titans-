@@ -125,6 +125,7 @@ void MenuFunctionChoice()//checks if you typed the right number
         }
         else if (Difficulty == 2)//checks if the values are 1 and 2
         {
+            WordleFiveLettersNormalDiff();
             break;
         }
         else if (Difficulty == 3)//checks if the values are 1 and 3

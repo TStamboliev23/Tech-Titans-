@@ -7,10 +7,12 @@ string WordCorrectnessChecker(string word, vector<string> vector);
 
 void WordleFiveLettersEasyDiff();
 void WordleFiveLettersNormalDiff();
+void WordleFiveLettersHardDiff();
 void WordleGraphInputer();
 void MenuFunctionChoice();
 void MenuFunctionTextOne();
 void MenuFunctionTextTwo();
+
 
 
 

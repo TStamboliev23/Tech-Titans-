@@ -136,6 +136,7 @@ void MenuFunctionChoice()//checks if you typed the right number
     case 2:
         if (Difficulty == 1)//checks if the values are 2 and 1
         {
+            WordleSixLettersEasyDiff();
             break;
         }
         else if (Difficulty == 2)//checks if the values are 2 and 2

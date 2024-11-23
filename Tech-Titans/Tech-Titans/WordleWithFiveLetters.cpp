@@ -1125,6 +1125,7 @@ void WordleFiveLettersNormalDiff() {
 }
 void WordleFiveLettersHardDiff() {
     int NumberOfGuesses = 4;
+    bool NumberCounter = false;//checks if the word is correct or not
     string InputWord;
     srand(time(0));
     int RandomNum = rand() % 8691;
@@ -1152,7 +1153,7 @@ void WordleFiveLettersHardDiff() {
             cout << "|  " << "\033[1m\033[32m" << InputWordInCase[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[4] << "\033[0m" << "   |" << endl;
             cout << "|      ||      ||      ||      ||      |" << endl;
             cout << "----------------------------------------" << endl;
-            
+            NumberCounter = true;
             break;
         }
         else
@@ -1234,5 +1235,18 @@ void WordleFiveLettersHardDiff() {
             cout << "----------------------------------------" << endl;
         }
     }
-    
+    if (NumberCounter == false)
+    {
+        cout << endl;
+        cout << "----------------------------------------" << endl;
+        cout << "|      ||      ||      ||      ||      |" << endl;
+        cout << "|  " << "\033[1m\033[32m" << RandomWord[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[4] << "\033[0m" << "   |" << endl;
+        cout << "|      ||      ||      ||      ||      |" << endl;
+        cout << "----------------------------------------" << endl;
+        cout << "Sorry you ran out of Guesses, you can try again" << endl << endl << endl << endl << endl;
+    }
+    else if (NumberCounter == true)
+    {
+        cout << "Congratulations you have guessed the word" << endl << endl << endl << endl << endl;
+    }
 }

@@ -130,6 +130,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="WordleWithFiveLetters.cpp" />
+    <ClCompile Include="WordleWithSevenLetters.cpp" />
     <ClCompile Include="WordleWithSixLetters.cpp" />
   </ItemGroup>
   <ItemGroup>

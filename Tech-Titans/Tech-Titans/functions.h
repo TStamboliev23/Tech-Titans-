@@ -14,6 +14,7 @@ void WordleSixLettersNormalDiff();
 void WordleSixLettersHardDiff();
 
 void WordleSevenLettersEasyDiff();
+void WordleSevenLettersNormalDiff();
 
 void WordleGraphInputer();
 void MenuFunctionChoice();

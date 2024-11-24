@@ -10309,6 +10309,161 @@ void WordleSevenLettersNormalDiff() {
         cout << "Congratulations you have guessed the word" << endl << endl << endl << endl << endl;
     }
 }
+void WordleSevenLettersHardDiff() {
+    int NumberOfGuesses = 4;
+    bool NumberCounter = false;//checks if the word is correct or not
+    string InputWord;
+    srand(time(0));
+    int RandomNum = rand() % 10000;
+    string RandomWord = AllSevenLetterWords[RandomNum];
+    for (int i = 0; i < NumberOfGuesses; i++)
+    {
+        do {
+            cin >> InputWord;
+            string Word = WordCorrectnessChecker(InputWord, AllSevenLetterWords);
+            if (Word != "") {
+
+                break;
+            }
+            else {
+                cout << "This is not a real word, try again\n";
+            }
+
+        } while (true);
+        string InputWordInCase = LowerCaseToUpperCase(InputWord);
+
+        if (InputWord == UpperCaseToLowerCase(RandomWord))
+        {
+            cout << "--------------------------------------------------------" << endl;
+            cout << "|      ||      ||      ||      ||      ||      ||      |" << endl;
+            cout << "|  " << "\033[1m\033[32m" << InputWordInCase[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[4] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[5] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << InputWordInCase[6] << "\033[0m" << "  |" << endl;
+            cout << "|      ||      ||      ||      ||      ||      ||      |" << endl;
+            cout << "--------------------------------------------------------" << endl;
+            NumberCounter = true;
+            break;
+        }
+        else
+        {
+            cout << "--------------------------------------------------------" << endl;
+            cout << "|      ||      ||      ||      ||      ||      ||      |" << endl;
+            cout << "|  ";
+            if (InputWord[0] == UpperCaseToLowerCaseChar(RandomWord[0]))
+            {
+                cout << "\033[1m\033[32m" << InputWordInCase[0] << "\033[0m";
+            }
+            else if (InputWord[0] == UpperCaseToLowerCaseChar(RandomWord[0]) || InputWord[0] == UpperCaseToLowerCaseChar(RandomWord[1]) || InputWord[0] == UpperCaseToLowerCaseChar(RandomWord[2]) || InputWord[0] == UpperCaseToLowerCaseChar(RandomWord[3]) || InputWord[0] == UpperCaseToLowerCaseChar(RandomWord[4]) || InputWord[0] == UpperCaseToLowerCaseChar(RandomWord[5]) || InputWord[0] == UpperCaseToLowerCaseChar(RandomWord[6]))
+            {
+                cout << "\033[1m\033[33m" << InputWordInCase[0] << "\033[0m";
+            }
+            else
+            {
+                cout << "\033[1m\033[37m" << InputWordInCase[0] << "\033[0m";
+
+            }
+            cout << "   ||  ";
+            if (InputWord[1] == UpperCaseToLowerCaseChar(RandomWord[1]))
+            {
+                cout << "\033[1m\033[32m" << InputWordInCase[1] << "\033[0m";
+            }
+            else if (InputWord[1] == UpperCaseToLowerCaseChar(RandomWord[0]) || InputWord[1] == UpperCaseToLowerCaseChar(RandomWord[1]) || InputWord[1] == UpperCaseToLowerCaseChar(RandomWord[2]) || InputWord[1] == UpperCaseToLowerCaseChar(RandomWord[3]) || InputWord[1] == UpperCaseToLowerCaseChar(RandomWord[4]) || InputWord[1] == UpperCaseToLowerCaseChar(RandomWord[5]) || InputWord[1] == UpperCaseToLowerCaseChar(RandomWord[6]))
+            {
+                cout << "\033[1m\033[33m" << InputWordInCase[1] << "\033[0m";
+            }
+            else
+            {
+                cout << "\033[1m\033[37m" << InputWordInCase[1] << "\033[0m";
+
+            }
+            cout << "   ||  ";
+            if (InputWord[2] == UpperCaseToLowerCaseChar(RandomWord[2]))
+            {
+                cout << "\033[1m\033[32m" << InputWordInCase[2] << "\033[0m";
+            }
+            else if (InputWord[2] == UpperCaseToLowerCaseChar(RandomWord[0]) || InputWord[2] == UpperCaseToLowerCaseChar(RandomWord[1]) || InputWord[2] == UpperCaseToLowerCaseChar(RandomWord[2]) || InputWord[2] == UpperCaseToLowerCaseChar(RandomWord[3]) || InputWord[2] == UpperCaseToLowerCaseChar(RandomWord[4]) || InputWord[2] == UpperCaseToLowerCaseChar(RandomWord[5]) || InputWord[2] == UpperCaseToLowerCaseChar(RandomWord[6]))
+            {
+                cout << "\033[1m\033[33m" << InputWordInCase[2] << "\033[0m";
+            }
+            else
+            {
+                cout << "\033[1m\033[37m" << InputWordInCase[2] << "\033[0m";
+
+            }
+            cout << "   ||  ";
+            if (InputWord[3] == UpperCaseToLowerCaseChar(RandomWord[3]))
+            {
+                cout << "\033[1m\033[32m" << InputWordInCase[3] << "\033[0m";
+            }
+            else if (InputWord[3] == UpperCaseToLowerCaseChar(RandomWord[0]) || InputWord[3] == UpperCaseToLowerCaseChar(RandomWord[1]) || InputWord[3] == UpperCaseToLowerCaseChar(RandomWord[2]) || InputWord[3] == UpperCaseToLowerCaseChar(RandomWord[3]) || InputWord[3] == UpperCaseToLowerCaseChar(RandomWord[4]) || InputWord[3] == UpperCaseToLowerCaseChar(RandomWord[5]) || InputWord[3] == UpperCaseToLowerCaseChar(RandomWord[6]))
+            {
+                cout << "\033[1m\033[33m" << InputWordInCase[3] << "\033[0m";
+            }
+            else
+            {
+                cout << "\033[1m\033[37m" << InputWordInCase[3] << "\033[0m";
+
+            }
+            cout << "   ||  ";
+            if (InputWord[4] == UpperCaseToLowerCaseChar(RandomWord[4]))
+            {
+                cout << "\033[1m\033[32m" << InputWordInCase[4] << "\033[0m";
+            }
+            else if (InputWord[4] == UpperCaseToLowerCaseChar(RandomWord[0]) || InputWord[4] == UpperCaseToLowerCaseChar(RandomWord[1]) || InputWord[4] == UpperCaseToLowerCaseChar(RandomWord[2]) || InputWord[4] == UpperCaseToLowerCaseChar(RandomWord[3]) || InputWord[4] == UpperCaseToLowerCaseChar(RandomWord[4]) || InputWord[4] == UpperCaseToLowerCaseChar(RandomWord[5]) || InputWord[4] == UpperCaseToLowerCaseChar(RandomWord[6]))
+            {
+                cout << "\033[1m\033[33m" << InputWordInCase[4] << "\033[0m";
+            }
+            else
+            {
+                cout << "\033[1m\033[37m" << InputWordInCase[4] << "\033[0m";
+
+            }
+            cout << "   ||  ";
+            if (InputWord[5] == UpperCaseToLowerCaseChar(RandomWord[5]))
+            {
+                cout << "\033[1m\033[32m" << InputWordInCase[5] << "\033[0m";
+            }
+            else if (InputWord[5] == UpperCaseToLowerCaseChar(RandomWord[0]) || InputWord[5] == UpperCaseToLowerCaseChar(RandomWord[1]) || InputWord[5] == UpperCaseToLowerCaseChar(RandomWord[2]) || InputWord[5] == UpperCaseToLowerCaseChar(RandomWord[3]) || InputWord[5] == UpperCaseToLowerCaseChar(RandomWord[4]) || InputWord[5] == UpperCaseToLowerCaseChar(RandomWord[5]) || InputWord[5] == UpperCaseToLowerCaseChar(RandomWord[6]))
+            {
+                cout << "\033[1m\033[33m" << InputWordInCase[5] << "\033[0m";
+            }
+            else
+            {
+                cout << "\033[1m\033[37m" << InputWordInCase[5] << "\033[0m";
+
+            }
+            cout << "   ||  ";
+            if (InputWord[6] == UpperCaseToLowerCaseChar(RandomWord[6]))
+            {
+                cout << "\033[1m\033[32m" << InputWordInCase[6] << "\033[0m";
+            }
+            else if (InputWord[6] == UpperCaseToLowerCaseChar(RandomWord[0]) || InputWord[6] == UpperCaseToLowerCaseChar(RandomWord[1]) || InputWord[6] == UpperCaseToLowerCaseChar(RandomWord[2]) || InputWord[6] == UpperCaseToLowerCaseChar(RandomWord[3]) || InputWord[6] == UpperCaseToLowerCaseChar(RandomWord[4]) || InputWord[6] == UpperCaseToLowerCaseChar(RandomWord[5]) || InputWord[6] == UpperCaseToLowerCaseChar(RandomWord[6]))
+            {
+                cout << "\033[1m\033[33m" << InputWordInCase[6] << "\033[0m";
+            }
+            else
+            {
+                cout << "\033[1m\033[37m" << InputWordInCase[6] << "\033[0m";
+
+            }
+            cout << "   |" << endl;
+            cout << "|      ||      ||      ||      ||      ||      ||      |" << endl;
+            cout << "--------------------------------------------------------" << endl;
+        }
+    }
+    if (NumberCounter == false)
+    {
+        cout << endl;
+        cout << "--------------------------------------------------------" << endl;
+        cout << "|      ||      ||      ||      ||      ||      ||      |" << endl;
+        cout << "|  " << "\033[1m\033[32m" << RandomWord[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[4] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[5] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[6] << "\033[0m" << "   |" << endl;
+        cout << "|      ||      ||      ||      ||      ||      ||      |" << endl;
+        cout << "--------------------------------------------------------" << endl;
+        cout << "Sorry you ran out of Guesses, you can try again" << endl << endl << endl << endl << endl;
+    }
+    else if (NumberCounter == true)
+    {
+        cout << "Congratulations you have guessed the word" << endl << endl << endl << endl << endl;
+    }
+}
 
 
 

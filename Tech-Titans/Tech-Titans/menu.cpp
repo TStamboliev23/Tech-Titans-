@@ -164,6 +164,7 @@ void MenuFunctionChoice()//checks if you typed the right number
         }
         else if (Difficulty == 3)//checks if the values are 3 and 3
         {
+            WordleSevenLettersHardDiff();
             break;
         }
 

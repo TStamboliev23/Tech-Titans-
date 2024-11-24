@@ -136,29 +136,35 @@ void MenuFunctionChoice()//checks if you typed the right number
     case 2:
         if (Difficulty == 1)//checks if the values are 2 and 1
         {
+            WordleSixLettersEasyDiff();
             break;
         }
         else if (Difficulty == 2)//checks if the values are 2 and 2
         {
+            WordleSixLettersNormalDiff();
             break;
 
         }
         else if (Difficulty == 3)//checks if the values are 2 and 3
         {
+            WordleSixLettersHardDiff();
             break;
         }
     case 3:
         if (Difficulty == 1)//checks if the values are 3 and 1
         {
+            WordleSevenLettersEasyDiff();
             break;
         }
         else if (Difficulty == 2)//checks if the values are 3 and 2
         {
+            WordleSevenLettersNormalDiff();
             break;
 
         }
         else if (Difficulty == 3)//checks if the values are 3 and 3
         {
+            WordleSevenLettersHardDiff();
             break;
         }
 

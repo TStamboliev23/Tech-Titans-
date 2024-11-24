@@ -8,6 +8,15 @@ string WordCorrectnessChecker(string word, vector<string> vector);
 void WordleFiveLettersEasyDiff();
 void WordleFiveLettersNormalDiff();
 void WordleFiveLettersHardDiff();
+
+void WordleSixLettersEasyDiff();
+void WordleSixLettersNormalDiff();
+void WordleSixLettersHardDiff();
+
+void WordleSevenLettersEasyDiff();
+void WordleSevenLettersNormalDiff();
+void WordleSevenLettersHardDiff();
+
 void WordleGraphInputer();
 void MenuFunctionChoice();
 void MenuFunctionTextOne();

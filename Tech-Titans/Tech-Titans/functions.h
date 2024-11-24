@@ -13,6 +13,8 @@ void WordleSixLettersEasyDiff();
 void WordleSixLettersNormalDiff();
 void WordleSixLettersHardDiff();
 
+void WordleSevenLettersEasyDiff();
+
 void WordleGraphInputer();
 void MenuFunctionChoice();
 void MenuFunctionTextOne();

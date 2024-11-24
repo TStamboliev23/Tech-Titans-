@@ -153,6 +153,7 @@ void MenuFunctionChoice()//checks if you typed the right number
     case 3:
         if (Difficulty == 1)//checks if the values are 3 and 1
         {
+            WordleSevenLettersEasyDiff();
             break;
         }
         else if (Difficulty == 2)//checks if the values are 3 and 2

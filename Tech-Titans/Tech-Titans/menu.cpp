@@ -4,18 +4,18 @@ int WordLength = 0;//checks for the word length input
 int Difficulty = 0;//checks for the difficulty input
 string UpperCaseToLowerCase(string word)//turnes all the uppercase words to lowercase
 {
-    for (auto& x : word)
+    for (int i=0;i<word.length();i++)
     {
-        x = tolower(x);
+        word[i] = tolower(word[i]);
     }
     return word;
 
 }
 string LowerCaseToUpperCase(string word)//turnes the lowercase string to uppercase
 {
-    for (auto& x : word)
+    for (int i = 0; i < word.length(); i++)
     {
-        x = toupper(x);
+        word[i] = toupper(word[i]);
     }
     return word;
 }
@@ -29,7 +29,7 @@ string WordCorrectnessChecker(string word, vector<string> vector)//checks if the
 
 {
 
-    for (auto i = 0; i < vector.size(); i++)//loops until the vector ends
+    for (int i = 0; i < vector.size(); i++)//loops until the vector ends
 
     {
 
@@ -108,7 +108,7 @@ void MenuFunctionChoice()//checks if you typed the right number
         else {
             cout << "The numbers need to be between 1-3\n";
         }
-   }
+    }
     system("cls");//clears the window text
     WordleGraphInputer();
 
@@ -121,55 +121,83 @@ void MenuFunctionChoice()//checks if you typed the right number
         if (Difficulty == 1)//checks if the values are 1 and 1
         {
             WordleFiveLettersEasyDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
         }
         else if (Difficulty == 2)//checks if the values are 1 and 2
         {
             WordleFiveLettersNormalDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
         }
         else if (Difficulty == 3)//checks if the values are 1 and 3
         {
             WordleFiveLettersHardDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
         }
+
     case 2:
         if (Difficulty == 1)//checks if the values are 2 and 1
         {
             WordleSixLettersEasyDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
         }
         else if (Difficulty == 2)//checks if the values are 2 and 2
         {
             WordleSixLettersNormalDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
 
         }
         else if (Difficulty == 3)//checks if the values are 2 and 3
         {
             WordleSixLettersHardDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
         }
+
     case 3:
         if (Difficulty == 1)//checks if the values are 3 and 1
         {
             WordleSevenLettersEasyDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
         }
         else if (Difficulty == 2)//checks if the values are 3 and 2
         {
             WordleSevenLettersNormalDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
 
         }
         else if (Difficulty == 3)//checks if the values are 3 and 3
         {
             WordleSevenLettersHardDiff();
+            cout << "Do you want to play again\nYes(Y)\nNo(press anything else)\n";
+            WordLength = 0;
+            Difficulty = 0;
             break;
         }
 
     }
-
 }
 void MenuFunctionTextOne()//inputing the word lenght choice
 {

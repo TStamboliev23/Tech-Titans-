@@ -989,7 +989,7 @@ void WordleFiveLettersEasyDiff() {
         cout << "|  " << "\033[1m\033[32m" << RandomWord[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[4] << "\033[0m" << "   |" << endl;
         cout << "|      ||      ||      ||      ||      |" << endl;
         cout << "----------------------------------------" << endl;
-        cout << "Sorry you ran out of Guesses, you can try again" << endl << endl << endl << endl << endl;
+        cout << "Sorry you ran out of Guesses" << endl << endl << endl << endl << endl;
     }
     else if (NumberCounter == true)
     {
@@ -1116,7 +1116,7 @@ void WordleFiveLettersNormalDiff() {
         cout << "|  " << "\033[1m\033[32m" << RandomWord[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[4] << "\033[0m" << "   |" << endl;
         cout << "|      ||      ||      ||      ||      |" << endl;
         cout << "----------------------------------------" << endl;
-        cout << "Sorry you ran out of Guesses, you can try again" << endl << endl << endl << endl << endl;
+        cout << "Sorry you ran out of Guesses" << endl << endl << endl << endl << endl;
     }
     else if (NumberCounter == true)
     {
@@ -1243,7 +1243,7 @@ void WordleFiveLettersHardDiff() {
         cout << "|  " << "\033[1m\033[32m" << RandomWord[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[4] << "\033[0m" << "   |" << endl;
         cout << "|      ||      ||      ||      ||      |" << endl;
         cout << "----------------------------------------" << endl;
-        cout << "Sorry you ran out of Guesses, you can try again" << endl << endl << endl << endl << endl;
+        cout << "Sorry you ran out of Guesses" << endl << endl << endl << endl << endl;
     }
     else if (NumberCounter == true)
     {

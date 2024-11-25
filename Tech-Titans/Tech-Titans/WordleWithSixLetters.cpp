@@ -9928,7 +9928,7 @@ void WordleSixLettersEasyDiff() {
     bool NumberCounter = false;//checks if the word is correct or not
     string InputWord;
     srand(time(0));
-    int RandomNum = rand() % 9921;
+    int RandomNum = rand() % 9922;
     string RandomWord = AllSixLetterWords[RandomNum];
     for (int i = 0; i < NumberOfGuesses; i++)
     {
@@ -10057,11 +10057,12 @@ void WordleSixLettersEasyDiff() {
         cout << "|  " << "\033[1m\033[32m" << RandomWord[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[4] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[5] << "\033[0m" << "   |" << endl;
         cout << "|      ||      ||      ||      ||      ||      |" << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "Sorry you ran out of Guesses, you can try again" << endl << endl << endl << endl << endl;
+        cout << "Sorry you ran out of Guesses" << endl << endl << endl << endl << endl;
     }
     else if (NumberCounter == true)
     {
         cout << "Congratulations you have guessed the word" << endl << endl << endl << endl << endl;
+        NumberCounter = false;
     }
 }
 void WordleSixLettersNormalDiff() {
@@ -10198,11 +10199,12 @@ void WordleSixLettersNormalDiff() {
         cout << "|  " << "\033[1m\033[32m" << RandomWord[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[4] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[5] << "\033[0m" << "   |" << endl;
         cout << "|      ||      ||      ||      ||      ||      |" << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "Sorry you ran out of Guesses, you can try again" << endl << endl << endl << endl << endl;
+        cout << "Sorry you ran out of Guesses" << endl << endl << endl << endl << endl;
     }
     else if (NumberCounter == true)
     {
         cout << "Congratulations you have guessed the word" << endl << endl << endl << endl << endl;
+        NumberCounter = false;
     }
 }
 void WordleSixLettersHardDiff() {
@@ -10339,10 +10341,11 @@ void WordleSixLettersHardDiff() {
         cout << "|  " << "\033[1m\033[32m" << RandomWord[0] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[1] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[2] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[3] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[4] << "\033[0m" << "   ||  " << "\033[1m\033[32m" << RandomWord[5] << "\033[0m" << "   |" << endl;
         cout << "|      ||      ||      ||      ||      ||      |" << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "Sorry you ran out of Guesses, you can try again" << endl << endl << endl << endl << endl;
+        cout << "Sorry you ran out of Guesses" << endl << endl << endl << endl << endl;
     }
     else if (NumberCounter == true)
     {
         cout << "Congratulations you have guessed the word" << endl << endl << endl << endl << endl;
+        NumberCounter = false;
     }
 }
